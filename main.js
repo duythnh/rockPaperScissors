@@ -29,7 +29,12 @@ function playRound(humanChoice, computerChoice) {
     (humanChoice === "scissors" && computerChoice === "paper")
   ) {
     humanScore++;
-  } else {
+  }
+  if (
+    (computerChoice === "rock" && humanChoice === "scissors") ||
+    (computerChoice === "paper" && humanChoice === "rock") ||
+    (computerChoice === "scissors" && humanChoice === "paper")
+  ) {
     computerScore++;
   }
 }
@@ -46,8 +51,10 @@ function playGame() {
   }
   if (humanScore > computerScore) {
     return "Human win!";
-  } else {
+  } else if (humanScore < computerScore) {
     return "Computer win!";
+  } else {
+    return "It's a tie";
   }
 }
 console.log(playGame());
