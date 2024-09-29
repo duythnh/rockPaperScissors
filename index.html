@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./main.js"></script>
-</head>
-<body>
-    
-</body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(102, 100, 100);
+            text-align: center;
+        }
+        
+        button {
+            padding: 8px 16px;
+            color: pink;
+            background-color: black;
+            margin: 16px;
+        }
+
+        #result {
+            color: pink;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id="rock">rock</button>
+      <button id="paper">paper</button>
+      <button id="scissors">scissors</button>
+    </div>
+    <div id="result"></div>
+  </body>
+  <script src="./main.js"></script>
 </html>
